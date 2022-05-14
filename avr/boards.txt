@@ -15,7 +15,7 @@ usbino.bootloader.unlock_bits=0x3F
 usbino.bootloader.lock_bits=0x0F
 
 usbino.build.board=AVR_USBINO
-usbino.build.core=arduino
+usbino.build.core=arduino:arduino
 usbino.build.variant=usbino
 
 ###### ATmega328p
