@@ -18,6 +18,20 @@ usbino.build.board=AVR_USBINO
 usbino.build.core=arduino:arduino
 usbino.build.variant=usbino
 
+###### ATmega328p
+
+## USBino W/ ATmega328p (16MHz)
+usbino.menu.cpu.atmega328p=ATmega328p (16 MHz)
+
+usbino.menu.cpu.atmega328p.upload.maximum_size=28672
+usbino.menu.cpu.atmega328p.upload.maximum_data_size=2048
+usbino.menu.cpu.atmega328p.upload.speed=115200
+
+usbino.menu.cpu.atmega328p.bootloader.file=usbasploader/usbasploader_atmega328p.hex
+
+usbino.menu.cpu.atmega328p.build.mcu=atmega328p
+usbino.menu.cpu.atmega328p.build.f_cpu=16000000L
+
 ###### ATmega32x
 
 ## USBino W/ ATmega32 (16MHz)
