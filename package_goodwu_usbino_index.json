@@ -100,8 +100,8 @@
           },
           "url": "https://github.com/Goodwu/USBino/releases/download/1.2.0/USBino.zip",
           "archiveFileName": "USBino.zip",
-          "checksum": "SHA-256:bc26274c3be34127afd2bf3e97f4e3097915eaea9845511b0472532887296065",
-          "size": "7856",
+          "checksum": "SHA-256:97fcf84ac756ce223b54c0278b90d581fc0be029f983b54fab3d99423ce2319a",
+          "size": "7858",
           "boards": [
             {"name": "USBino"}
           ],
