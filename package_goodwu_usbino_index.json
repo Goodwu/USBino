@@ -93,15 +93,15 @@
         },{
           "name": "USBino",
           "architecture": "avr",
-          "version": "1.1.1",
+          "version": "1.2.0",
           "category": "USBino",
           "help": {
             "online": "https://khairulhasan.com/USBino/help/"
           },
-          "url": "https://github.com/khairulhasanmd/USBino/releases/download/1.1.0/USBino.zip",
+          "url": "https://github.com/Goodwu/USBino/releases/download/1.2.0/USBino.zip",
           "archiveFileName": "USBino.zip",
-          "checksum": "SHA-256:af59b3a172dd27e80161eebdf7230004ed6c85e6c509fe8d4b652c7c984e8a6f",
-          "size": "5038",
+          "checksum": "SHA-256:bc26274c3be34127afd2bf3e97f4e3097915eaea9845511b0472532887296065",
+          "size": "7856",
           "boards": [
             {"name": "USBino"}
           ],

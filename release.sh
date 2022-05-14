@@ -3,30 +3,12 @@
 # It then zips the hardware add-on and calculate the SHA-256 and file size
 # This is used with the Arduino Boards Manager
 
-url=https://github.com/Goodwu/USBino.git
 hardware_add_on_path=avr
+name=USBino
 
-dir="$(cd "$(dirname "$0")" && pwd)"
-echo "Working path: $dir"
+cp -a avr $name
 
-name=$(echo $(echo $url | rev | cut -d'/' -f 1 | rev) | cut -d'.' -f 1)
-echo "\nClone Project: $name\n"
-git clone --depth 1 --single-branch -b master --recursive $url || exit 1
-cd "$name"
-
-echo "\nRemove git files"
-find . -name .git | xargs rm -rf
-find . -name .gitmodules | xargs rm -rf
-find . -name .gitignore | xargs rm -rf
-find . -name .gitattributes | xargs rm -rf
-
-cd "$dir"
-mv "$name/$hardware_add_on_path" "$dir/$name-hardware" # Rename avr directory and move out of folder
-
-echo "Remove \"$name\" directory"
-rm -rf $name
-
-mv "$dir/$name-hardware" "$dir/$name" # Rename hardware directory to the original name
+rm -f "$name".zip
 
 echo "ZIP hardware directory"
 zip -rq "$name" "$name" # Zip the hardware add-on
