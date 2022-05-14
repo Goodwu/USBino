@@ -15,7 +15,7 @@ usbino.bootloader.unlock_bits=0x3F
 usbino.bootloader.lock_bits=0x0F
 
 usbino.build.board=AVR_USBINO
-usbino.build.core=arduino:arduino
+usbino.build.core=arduino
 usbino.build.variant=usbino
 
 ###### ATmega328p
@@ -31,6 +31,8 @@ usbino.menu.cpu.atmega328p.bootloader.file=usbasploader/usbasploader_atmega328p.
 
 usbino.menu.cpu.atmega328p.build.mcu=atmega328p
 usbino.menu.cpu.atmega328p.build.f_cpu=16000000L
+usbino.menu.cpu.atmega328p.build.board=AVR_UNO_VUSB
+usbino.menu.cpu.atmega328p.build.variant=standard
 
 ###### ATmega32x
 
